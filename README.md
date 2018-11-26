@@ -72,8 +72,8 @@
         A[pos] = tmp;
     }
 
-#快速排序
-static class QuickSort {
+# 快速排序
+	static class QuickSort {
 	 
 		public static  void  quickSort(int[] a) {
 			if(a.length>0) {
