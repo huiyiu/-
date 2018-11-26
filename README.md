@@ -120,3 +120,23 @@
 			quickSort(a, i+1, high);
 		}
 	}
+# 选择排序
+	static void selectionSort(int[] a) {
+		int n = a.length;
+		for (int i = 0; i < n; i++) {
+			//初始化最小下标
+		    int k = i;
+		    // 找出最小值的下标
+		    for (int j = i + 1; j < n; j++) {
+			if (a[j] < a[k]) {
+			    k = j;
+			}
+		    }
+		    // 将最小值放到未排序记录的第一个位置
+		    if (k > i) {
+			int tmp = a[i];
+			a[i] = a[k];
+			a[k] = tmp;
+		    }
+		}
+	    }
